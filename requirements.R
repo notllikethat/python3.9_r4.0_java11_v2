@@ -1,0 +1,8 @@
+#install.packages("devtools")
+library(devtools)
+devtools::install_github("notllikethat/ChemmineR")
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("KEGGREST")
+install.packages("data.table")
+install.packages("tidyverse")
